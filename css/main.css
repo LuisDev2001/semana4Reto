@@ -330,10 +330,10 @@ section.contactMe > form button:hover {
 }
 /*TABLET V*/
 @media screen and (max-width: 768px) {
-  header {
+  header.content-menu {
     justify-content: space-around;
   }
-  header .burgerButton {
+  header.content-menu .burgerButton {
     display: block;
     cursor: pointer;
     border-radius: 50%;
@@ -344,14 +344,14 @@ section.contactMe > form button:hover {
     justify-content: center;
     transition: 0.25s ease all;
   }
-  header .burgerButton:hover {
+  header.content-menu .burgerButton:hover {
     background-color: var(--colorMenuItemHover);
   }
-  header .burgerButton i {
+  header.content-menu .burgerButton i {
     font-size: 1.5em;
     color: var(--colorBlanco);
   }
-  header nav.menu {
+  header.content-menu nav.menu {
     position: absolute;
     flex-direction: column;
     background-color: var(--colorMenu);
@@ -360,10 +360,10 @@ section.contactMe > form button:hover {
     left: -70em;
     transition: 0.4s ease all;
   }
-  header nav.menu.appear {
+  header.content-menu nav.menu.appear {
     left: 0;
   }
-  header nav.menu a {
+  header.content-menu nav.menu a {
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -371,7 +371,7 @@ section.contactMe > form button:hover {
     height: 50px;
     border-top: 1px solid var(--colorBlanco);
   }
-  header nav.menu a:first-child {
+  header.content-menu nav.menu a:first-child {
     border-top: 0;
   }
   section.hero > span {
