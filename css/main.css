@@ -122,3 +122,35 @@ section.mySkills > .contentSkills > .skills > span {
   background-color: var(--coloTurquesClaro);
   border-radius: 10px;
 }
+/*Seccion portfolio*/
+section.myPortfolio {
+  width: inherit;
+  height: auto;
+  background-color: var(--coloAmarillo);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.myPortfolio h2 {
+  font-size: 36px;
+  color: var(--colorBlanco);
+  text-align: center;
+}
+section.myPortfolio > .containerPorfolio {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 140px);
+  grid-template-rows: repeat(2, 92px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+section.myPortfolio > .containerPorfolio .item {
+  width: 140px;
+  height: 92px;
+}
+section.myPortfolio > .containerPorfolio .item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
