@@ -129,6 +129,7 @@ section.mySkills h2 {
   font-size: 36px;
   color: var(--colorBlanco);
   text-align: center;
+  margin-bottom: 30px;
 }
 section.mySkills > .contentSkills {
   width: 90%;
@@ -148,6 +149,7 @@ section.mySkills > .contentSkills > .skills > span {
   font-family: Helvetica;
   color: var(--colorBlanco);
   font-size: 18px;
+  margin-bottom: 12px;
 }
 /*barras de skills*/
 .contentBar {
