@@ -78,7 +78,8 @@ section.aboutMe > article > a:active {
 /*section skills*/
 section.mySkills {
   width: inherit;
-  height: 40vh;
+  height: auto;
+  padding: 1em;
   background-color: var(--colorPurpura);
   display: flex;
   justify-content: space-around;
@@ -144,6 +145,7 @@ section.myPortfolio > .containerPorfolio {
   grid-template-rows: repeat(2, 92px);
   grid-gap: 30px;
   justify-content: center;
+  justify-items: center;
 }
 section.myPortfolio > .containerPorfolio .item {
   width: 140px;
@@ -175,6 +177,7 @@ section.myClients > .contentClients {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 section.myClients > .contentClients > img {
   width: auto;
@@ -238,6 +241,8 @@ section.contactMe > form > div > textarea {
   padding: 20px;
   margin-right: 20px;
   outline: none;
+  font-family: "Helvetica";
+  border: 0;
 }
 section.contactMe > form button {
   border: 0;
@@ -255,4 +260,89 @@ section.contactMe > form button {
 section.contactMe > form button:hover {
   background-color: var(--colorBlanco);
   color: var(--colorAzulOscuro);
+}
+
+/*RESPONSIVE DESING*/
+/*TABLET H*/
+@media screen and (max-width: 1024px) {
+  section.hero {
+    height: 80vh;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+  }
+  section.hero > span {
+    font-size: 1.8em;
+  }
+  section.aboutMe {
+    height: auto;
+  }
+  section.aboutMe > article {
+    margin: 0 auto 15px;
+  }
+  section.mySkills > .contentSkills {
+    margin: 0 auto 15px auto;
+  }
+  section.myClients > .contentClients {
+    margin: 15px 0;
+  }
+}
+/*TABLET V*/
+@media screen and (max-width: 768px) {
+  section.hero > span {
+    bottom: 15%;
+    left: 1.5em;
+  }
+  section.myPortfolio > .containerPorfolio {
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px 1em;
+  }
+  section.aboutMe > article > p {
+    font-size: 14px;
+  }
+  section.aboutMe > article > a {
+    padding: 12px 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+/*MOBILE*/
+@media screen and (max-width: 480px) {
+  section.hero {
+    background-size: cover;
+    background-position: 40% 50%;
+  }
+  section.hero > span {
+    left: 1em;
+  }
+  section.myClients > .contentClients {
+    flex-direction: column;
+    flex-wrap: unset;
+    height: auto;
+  }
+  section.mySkills > .contentSkills {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.myPortfolio > .containerPorfolio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+  section.myClients > .contentClients > img {
+    margin: 10px 0;
+  }
+  section.contactMe > form button {
+    width: 50%;
+  }
+  section.contactMe > form > div {
+    flex-direction: column;
+  }
+  section.contactMe > form > div > input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  section.contactMe > form button {
+    width: 100%;
+  }
 }
