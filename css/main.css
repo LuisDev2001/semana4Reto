@@ -356,8 +356,8 @@ section.contactMe > form button:hover {
     background-color: var(--colorMenu);
     width: 100%;
     top: 3.6em;
-    left: -40em;
-    transition: 0.25s ease all;
+    left: -70em;
+    transition: 0.4s ease all;
   }
   header nav.menu.appear {
     left: 0;
