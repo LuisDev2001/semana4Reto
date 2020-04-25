@@ -154,3 +154,103 @@ section.myPortfolio > .containerPorfolio .item img {
   height: 100%;
   display: block;
 }
+/*seccion cliente*/
+section.myClients {
+  width: inherit;
+  height: auto;
+  background-color: var(--coloGrisAzulino);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em;
+}
+section.myClients h2 {
+  font-size: 36px;
+  color: var(--colorBlanco);
+  text-align: center;
+}
+section.myClients > .contentClients {
+  width: inherit;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.myClients > .contentClients > img {
+  width: auto;
+  height: auto;
+}
+/*SECCION DE CONTACTO*/
+section.contactMe {
+  background-color: var(--colorGrisAzul);
+  width: inherit;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.contactMe h2 {
+  font-size: 36px;
+  color: var(--colorBlanco);
+  text-align: center;
+  margin: 27px 0;
+}
+section.contactMe > form {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.contactMe > form > div {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 10px 0;
+}
+section.contactMe > form > div > input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 90%;
+  margin-right: 20px;
+  padding: 20px;
+  outline: none;
+  border: 0;
+}
+section.contactMe > form > div > input[type="text"]:focus:invalid,
+input[type="tel"]:focus:invalid,
+input[type="email"]:focus:invalid {
+  background-color: var(--colorRojoInvalid);
+}
+section.contactMe > form > div > input[type="text"]:focus:valid,
+input[type="tel"]:focus:valid,
+input[type="email"]:focus:valid {
+  background-color: var(--colorVerdeInvalid);
+}
+section.contactMe > form > div > textarea {
+  width: 100%;
+  height: 110px;
+  padding: 20px;
+  margin-right: 20px;
+  outline: none;
+}
+section.contactMe > form button {
+  border: 0;
+  background-color: var(--colorAzulOscuro);
+  border: 1px solid var(--colorAzulOscuro);
+  color: var(--colorBlanco);
+  cursor: pointer;
+  width: 16%;
+  height: 60px;
+  font-size: 18px;
+  text-transform: uppercase;
+  outline: none;
+  transition: 0.25s ease all;
+}
+section.contactMe > form button:hover {
+  background-color: var(--colorBlanco);
+  color: var(--colorAzulOscuro);
+}

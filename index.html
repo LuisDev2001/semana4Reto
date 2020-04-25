@@ -108,5 +108,24 @@
         <img src="./img/imageClien4.png" alt="cliente4" />
       </div>
     </section>
+    <section class="contactMe">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+          <div>
+            <input type="text" placeholder="Nombre" pattern="[A-Z a-z]+" required/>
+            <input type="text" placeholder="Apellido" pattern="[A-Z a-z]+" required/>
+          </div>
+          <div>
+            <input type="email" placeholder="Email" required/>
+            <input type="tel" placeholder="Telefono" pattern="[0-9]+" minlength="9" maxlength="9" required/>
+          </div>
+          <div>
+            <textarea placeholder="Descripcion" pattern="[A-Z a-z]+" minlength="50" maxlength="50" required/></textarea>
+          </div>
+          <div>
+            <button>Enviar</button>
+          </div>
+        </form>
+    </section>
   </body>
 </html>

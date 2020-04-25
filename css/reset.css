@@ -13,6 +13,8 @@
   --colorGrisAzul: #1687a0;
   --colorAzulOscuro: #233451;
   --colorNegro: #222222;
+  --colorRojoInvalid: rgba(255, 0, 0, 0.5);
+  --colorVerdeInvalid: rgba(55, 255, 71, 0.5);
 }
 
 *,
