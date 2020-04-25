@@ -1,8 +1,11 @@
+@import "./fonts.css";
+
 :root {
   --colorBlanco: #ffffff;
   --colorAzulRGBA: rgba(114, 153, 254, 0.5);
   --colorCelesteClaro: #7299fe;
   --colorRosadoClaro: #d16fff;
+  --colorRosadoHover: #c860f8;
   --colorPurpura: #9122ff;
   --coloTurquesClaro: #57eff9;
   --coloAmarillo: #ffd233;
@@ -31,4 +34,10 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h1,
+h2,
+span {
+  font-family: "Helvetica";
 }
