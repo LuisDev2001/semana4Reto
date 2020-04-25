@@ -1,0 +1,34 @@
+@import "./reset.css";
+@import "./fonts.css";
+/*Estilando el header*/
+header {
+  width: 100%;
+  height: 525px;
+  position: relative;
+}
+header img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header > h1 {
+  text-align: center;
+  color: var(--colorBlanco);
+  font-size: 3em;
+  position: absolute;
+  right: 50%;
+  top: 10px;
+  font-family: "Helvetica";
+}
+header > span {
+  position: absolute;
+  bottom: 30%;
+  left: 5em;
+  color: var(--colorBlanco);
+  font-weight: bold;
+  font-size: 2.5em;
+  background-color: var(--colorAzulRGBA);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Helvetica";
+}
