@@ -1,5 +1,38 @@
 @import "./reset.css";
 @import "./fonts.css";
+
+/*Estilnado el menu*/
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--colorMenu);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+header h2 {
+  color: var(--colorBlanco);
+  font-size: 2em;
+}
+header nav.menu {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav.menu a {
+  font-size: 1em;
+  color: var(--colorBlanco);
+  border-radius: 10px;
+  padding: 5px 12px;
+  transition: 0.25s ease all;
+}
+header nav.menu a:hover {
+  background-color: var(--colorMenuItemHover);
+}
 /*Estilando el header*/
 section.hero {
   width: 100%;
@@ -7,6 +40,7 @@ section.hero {
   background-image: url("../img/heroImage.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 60px;
   background-position: 100% 50%;
   position: relative;
 }
@@ -62,8 +96,12 @@ section.aboutMe > article > a {
   border: 1px solid var(--colorRosadoClaro);
   color: var(--colorBlanco);
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  padding: 18px 50px;
+  width: 7.5em;
+  height: 62px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 1.5em;
   font-family: "Helvetica";
@@ -288,6 +326,30 @@ section.contactMe > form button:hover {
 }
 /*TABLET V*/
 @media screen and (max-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+  header h2 {
+    padding-left: 15px;
+  }
+  header nav.menu {
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--colorMenu);
+    width: 100%;
+    top: 3.6em;
+  }
+  header nav.menu a {
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid var(--colorBlanco);
+  }
+  header nav.menu a:first-child {
+    border-top: 0;
+  }
   section.hero > span {
     bottom: 15%;
     left: 1.5em;
@@ -300,7 +362,6 @@ section.contactMe > form button:hover {
     font-size: 14px;
   }
   section.aboutMe > article > a {
-    padding: 12px 40px;
     font-size: 18px;
     margin-bottom: 10px;
   }
